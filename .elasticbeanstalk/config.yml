@@ -1,19 +1,15 @@
 branch-defaults:
   main:
-    environment: Tsgallerybeanstalk-env
+    environment: Tsgallerybeanstalk-env-1
 deploy:
   artifact: ts_gallery.zip
 global:
-  application_name: TsGalleryBeanstalk
+  application_name: TsgalleryBeanstalk
   branch: main
-  default_ec2_keyname: null
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
   default_region: us-east-1
   include_git_submodules: true
-  instance_profile: null
-  platform_name: null
-  platform_version: null
-  profile: null
   repository: https://github.com/tutugodfrey/ts_gallery.git
   sc: git
+  profile: ebcli
   workspace_type: Application
